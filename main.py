@@ -67,6 +67,10 @@ def main(program_name, *args):
     incorrect = 0
     avg_round_secs = 0
 
+    # Print commands with default args shown
+    print(f"{program_name} {min_int}-{max_int} "
+        f"{' '.join(f'{repr}:{base}' for repr, base in zip(reprs, bases))}")
+    print()
     print("Fill in the blanks!")
     while True:
         try:
