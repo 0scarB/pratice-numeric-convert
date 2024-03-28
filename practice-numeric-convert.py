@@ -18,10 +18,10 @@ def main(program_name, *args):
             print("\n".join([
                 f"{program_name} <min>-<max> <ident1>:<base> <ident2>:<base2> ...",
                 "",
-                "   Quiz student on numeric representation conversions",
-                "   between <base1> and <base2>, etc., identified by the ",
-                "   identifiers <ident1> <ident2>, etc., for numbers ranging",
-                "   from <min> to <max>, where '<min>-<max>' is optional."
+                "   Quiz student on numeric representation conversions between ",
+                "   <base1> and <base2>, etc., identified by the identifiers ",
+                "   <ident1> and <ident2>, etc., for numbers ranging from ",
+                "   <min> to <max>, where '<min>-<max>' is optional.",
                 "",
                 "   Requires at least 2 bases.",
                 "",
@@ -30,7 +30,8 @@ def main(program_name, *args):
                 "",
                 f"{program_name} -h|--help",
                 "",
-                "   Display this help message."]))
+                "   Display this help message.",
+                ""]))
             return
         invalid_arg_error = \
             ValueError(
